@@ -1,6 +1,6 @@
 let mic;
-
 let fft; // Análise de frequência
+let angleOffset = 0 // Controle de rotação
 
 function setup() {
   // Quadro para desenhar, do tamanho da janela do navegador
@@ -26,6 +26,7 @@ function setup() {
 function draw() {
   // Pinta o fundo de preto a cada quadro
   background(0);
+  angleOffset += 0.3 // Ângulo de rotação
 
   // Resultado da análise de som em array de amplitudes de frequência
   let spectrum = fft.analyze();
@@ -41,7 +42,7 @@ function draw() {
   beginShape();
   for (let i = 0; i < spectrum.length; i++) {
     // Mapeia o índice do array para um ângulo (0 a 360 graus)
-    let angle = map(i, 0, spectrum.length, 0, 360);
+    let angle = map(i, 0, spectrum.length, 0, 360) + angleOffset;
     
     // Pega a amplitude (volume) para a frequência atual
     let amp = spectrum[i];
