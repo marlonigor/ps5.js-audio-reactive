@@ -47,7 +47,7 @@ function draw() {
     let amp = spectrum[i];
 
     // Mapeia a amplitude (0-255) para um raio (ex: de 20 a 300 pixels)
-    let r = map(amp, 0, 255, 20, 300);
+    let r = map(amp, 0, 100, 20, 300);
 
     // Converte coordenadas polares (ângulo, raio) para cartesianas (x, y)
     let x = r * cos(angle);
