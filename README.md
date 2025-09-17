@@ -12,7 +12,7 @@ Um projeto de arte generativa criado com a biblioteca p5.js que transforma o som
 * **Sensibilidade Ajustável:** O mapeamento de áudio é calibrado para oferecer uma resposta visual impactante mesmo com sons ambientes.
 * **Responsivo:** O canvas se adapta automaticamente ao tamanho da janela do navegador.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **HTML5**
 * **CSS3**
