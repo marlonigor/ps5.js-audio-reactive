@@ -2,6 +2,8 @@
 
 Um projeto de arte generativa criado com a biblioteca p5.js que transforma o som capturado pelo microfone em uma visualização de espectro de áudio hipnótica e dinâmica.
 
+![me](https://github.com/marlonigor/ps5.js-audio-reactive/blob/main/sinfoniavisualgif.gif)
+
 ## Funcionalidades
 
 * **Visualização em Tempo Real:** Analisa o espectro de áudio do microfone a cada quadro.
